@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Онцгой Болзоо 💖</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="glow-bg"></div>
+
+    <div class="container">
+      <div id="page1" class="page active">
+        <div class="heart-icon">💖</div>
+        <h1>Хөөрхөн туяатай нэг өдрийг өнгрүүлмээр байна уу ✨</h1>
+        <div class="btn-group">
+          <button id="yesBtn" class="btn btn-yes">Тийм 😍</button>
+          <button id="noBtn" class="btn btn-no">Үгүй 😢</button>
+        </div>
+      </div>
+
+      <div id="page2" class="page">
+        <h2>Сайхан залуугийн таалалаар😆😆</h2>
+        <p>завтай өдрөө согоорой!</p>
+        <div class="input-group">
+          <label for="datePicker"
+            ><i class="fa-regular fa-calendar-days"></i> Өдөр сонгох:</label
+          >
+          <input type="date" id="datePicker" />
+        </div>
+
+        <div class="input-group">
+          <label for="timePicker"
+            ><i class="fa-regular fa-clock"></i> Цаг сонгох:</label
+          >
+          <input type="time" id="timePicker" />
+        </div>
+
+        <button id="nextToStep3" class="btn btn-yes">Дараагийнх ➡️</button>
+      </div>
+
+      <form
+        id="dateForm"
+        action="https://formspree.io/f/xwvjdeqq"
+        method="POST"
+        class="page"
+      >
+        <h2>Юу хиймээр байна beeb😇</h2>
+        <p>(Олон сонголт хийж болно):</p>
+
+        <input type="hidden" id="hiddenDate" name="Сонгосон Өдөр" />
+        <input type="hidden" id="hiddenTime" name="Сонгосон Цаг" />
+
+        <div class="activities">
+          <label class="activity-card">
+            <input type="checkbox" name="Хөтөлбөр" value="Вар тоглох" />
+            <div class="card-content">
+              <span class="icon">🏺</span>
+              <h3>Варан урлал хийх</h3>
+            </div>
+          </label>
+
+          <label class="activity-card">
+            <input type="checkbox" name="Хөтөлбөр" value="Кино үзэх" />
+            <div class="card-content">
+              <span class="icon">🎬</span>
+              <h3>Кино үзэх</h3>
+            </div>
+          </label>
+
+          <label class="activity-card">
+            <input type="checkbox" name="Хөтөлбөр" value="Оройн хоол" />
+            <div class="card-content">
+              <span class="icon">🍕</span>
+              <h3>Оройн хоол идэх</h3>
+            </div>
+          </label>
+        </div>
+
+        <button type="submit" id="submitBtn" class="btn btn-yes">
+          Болзоогоо баталгаажуулах 💌
+        </button>
+      </form>
+
+      <div id="page4" class="page">
+        <div class="success-icon">🎉🥳💝</div>
+        <h2>Болзоо амжилттай товлогдлоо</h2>
+        <div id="summaryText" class="summary-box"></div>
+        <p class="footer-love">Удахгүй уулзацгаая BEEBUCHKA</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
