@@ -146,14 +146,14 @@ function initConfetti() {
     constructor(x, y, isExplosion = false) {
       this.x = x;
       this.y = y;
-      this.size = Math.random() * 7 + 4; // Өнгөт цаасны хэмжээ
+      this.size = Math.random() * 7 + 4;
       this.color = colors[Math.floor(Math.random() * colors.length)];
       this.rotation = Math.random() * 360;
       this.rotationSpeed = Math.random() * 6 - 3;
 
       if (isExplosion) {
         const angle = Math.random() * Math.PI * 2;
-        const speed = Math.random() * 6 + 3; // Буудах хүч
+        const speed = Math.random() * 6 + 3;
         this.speedX = Math.cos(angle) * speed;
         this.speedY = Math.sin(angle) * speed;
       } else {
